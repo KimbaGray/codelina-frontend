@@ -1,12 +1,13 @@
 import React, { Component } from "react";
+import Logo from "../images/Logo/Logo.png";
 
 class Menu extends Component {
   state = {};
   render() {
     return (
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <a class="navbar-brand" href="#">
-          Carolina Veloso
+          <img src={Logo} alt="Logo" className="Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -37,13 +38,10 @@ class Menu extends Component {
               </a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-              >
-                Disabled
+              <a class="nav-link" href="#">
+                <button type="button" class="btn btn-dark">
+                  Login
+                </button>
               </a>
             </li>
           </ul>

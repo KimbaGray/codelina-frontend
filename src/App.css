@@ -22,3 +22,20 @@ p {
 .btn-link {
   color: grey;
 }
+
+.Logo {
+  width: 150px;
+}
+
+.Footer > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: auto;
+  justify-content: center;
+}
+
+.socialMedia {
+  font-size: 24px;
+  margin: 10px;
+}

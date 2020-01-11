@@ -3,6 +3,7 @@ import "./App.css";
 import Heroimage from "./images/Heroimage.jpg";
 import Carolina from "./images/Carolina.jpg";
 import Menu from "./components/menu";
+import Footer from "./components/footer";
 
 class App extends Component {
   state = {};
@@ -47,7 +48,9 @@ class App extends Component {
             Book your session here
           </button>
         </div>
-        <footer>To do - footer component</footer>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     );
   }
