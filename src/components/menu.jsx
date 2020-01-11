@@ -5,12 +5,14 @@ class Menu extends Component {
   state = {};
   render() {
     return (
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <a class="navbar-brand" href="#">
+      <div className="customNav">
+      <a className="navbar-brand" href="#">
           <img src={Logo} alt="Logo" className="Logo" />
         </a>
+      <nav className="navbar navbar-expand-lg navbar-light bg-white ourNav">
+
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -18,28 +20,28 @@ class Menu extends Component {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                Home <span class="sr-only">(current)</span>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item active">
+              <a className="nav-link" href="#">
+                Home <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 Book your session
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
                 Contact me
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <button type="button" class="btn btn-dark">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <button type="button" className="btn btn-dark">
                   Login
                 </button>
               </a>
@@ -47,6 +49,7 @@ class Menu extends Component {
           </ul>
         </div>
       </nav>
+      </div>
     );
   }
 }
