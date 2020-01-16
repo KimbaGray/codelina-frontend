@@ -5,6 +5,8 @@ import Reikiken from "./images/Reikiken.jpg";
 import Menu from "./components/menu";
 import Footer from "./components/footer";
 import SignIn from "./components/sign-in"
+import BookingSlots from "./components/bookingSlots";
+
 
 class App extends Component {
   state = {};
@@ -24,6 +26,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <BookingSlots />
           <Menu />
         <div className="aboutCarolina">
           <img src={Heroimage} alt="Carolina doing yoga" />

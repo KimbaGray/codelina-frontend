@@ -1,142 +1,150 @@
 @import "reset.css";
 
 h1 {
-  font-size: 24px;
-  text-align: center;
-  margin: 10px;
-
+	font-size: 24px;
+	text-align: center;
+	margin: 10px;
 }
 
 body {
-  font-family: futura;
+	font-family: futura;
 }
 
 img {
-  width: 100vw;
+	width: 100vw;
 }
 
 p {
-  text-align: center;
-  margin: 10px;
+	text-align: center;
+	margin: 10px;
 }
 
 .copy {
-margin: auto;
-display: flex;
-flex-direction: column;
-padding: 20px;
-align-items: center;
-justify-content: center;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	align-items: center;
+	justify-content: center;
 }
 
 .btn-link {
-  color: grey;
-  
+	color: grey;
 }
 
 .aboutReiki {
-  display: flex;
-  flex-direction: column-reverse;
+	display: flex;
+	flex-direction: column-reverse;
 }
 
-.customButton{
-  background-color: #d08749;
-  margin: 5vw;
-  padding: 10px;
-  color: white;
+.customButton {
+	background-color: #d08749;
+	margin: 5vw;
+	padding: 10px;
+	color: white;
 }
 
-.bookASession{
-  display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+.bookASession {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .Logo {
-  width: 150px;
+	width: 150px;
 }
 
 .Footer > ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin: auto;
-  justify-content: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin: auto;
+	justify-content: center;
 }
 
 .socialMedia {
-  font-size: 24px;
-  margin: 10px;
+	font-size: 24px;
+	margin: 10px;
 }
 
 form {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: auto;
-  padding: 3%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: auto;
+	padding: 3%;
 }
 
 .form-group {
-  margin: 5%;
+	margin: 5%;
 }
-
 
 @media only screen and (min-width: 600px) {
+	img {
+		width: 50vw;
+	}
+	.aboutCarolina,
+	.aboutReiki {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		margin: 50px;
+	}
 
-img {
-  width: 50vw;
-}
-.aboutCarolina, .aboutReiki {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin: 50px;
-}
+	.ourNav {
+		display: flex !important;
+		align-items: baseline !important;
+	}
 
-.ourNav {
-  display: flex !important;
-  align-items: baseline !important;
-}
+	.customNav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 3%;
+		padding-bottom: 0;
+	}
 
+	.copy {
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+		align-items: center;
+		justify-content: center;
+	}
 
-.customNav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 3%;
-  padding-bottom: 0;
-}
+	.customButton {
+		background-color: #d08749;
+		padding: 10px;
+		color: white;
+		margin-top: 10px;
+	}
 
+	form {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 33vw;
+		margin: auto;
+		padding: 3%;
+	}
+	.form-group {
+		margin: 5%;
+	}
 
-.copy{
-display: flex;
-flex-direction: column;
-padding: 20px;
-align-items: center;
-justify-content: center;
+	.bookingSlot {
+		background: pink;
+		margin: 20px;
+		padding: 10px;
+		display: flex;
+		justify-content: space-between;
+	}
 
-}
-
-.customButton{
-  background-color: #d08749;
-  padding: 10px;
-  color: white;
-  margin-top: 10px;
-}
-
-
-form {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 33vw;
-  margin: auto;
-  padding: 3%;
-}
-.form-group {
-  margin: 5%;
-}
-
+	.bookingSlotDanger {
+		background: red;
+		margin: 20px;
+		padding: 10px;
+		display: flex;
+		justify-content: space-between;
+	}
 }
