@@ -1,20 +1,33 @@
 import React, { Component } from "react";
 import "./App.css";
 import Heroimage from "./images/Heroimage.jpg";
-import Carolina from "./images/Carolina.jpg";
+import Reikiken from "./images/Reikiken.jpg";
 import Menu from "./components/menu";
 import Footer from "./components/footer";
+import SignIn from "./components/sign-in"
 
 class App extends Component {
   state = {};
+
+// render() {
+//   return (
+//  <SignIn/>
+//   );
+// }
+
+// }
+
+
+
+
+
   render() {
     return (
       <div>
-        <nav>
           <Menu />
-        </nav>
         <div className="aboutCarolina">
           <img src={Heroimage} alt="Carolina doing yoga" />
+         <div className="copy">
           <h1>About Carolina</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus
@@ -22,12 +35,13 @@ class App extends Component {
             finibus eget nunc id, fringilla aliquam ante. Suspendisse semper
             pharetra ipsum, vitae porta turpis ornare a.
           </p>
-          <button type="button" className="btn btn-link">
+          <button type="button" className="btn btn-link customButton">
             Contact Carolina
           </button>
+          </div>
         </div>
         <div className="aboutReiki">
-          <img src={Carolina} alt="Carolina in sun" />
+           <div className="copy">
           <h1>About Reiki</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus
@@ -38,15 +52,12 @@ class App extends Component {
             pellentesque vehicula.
           </p>
         </div>
+         <img src={Reikiken} alt="Carolina in sun" />
+        </div>
         <div className="bookASession">
-          <h1>Book your Reiki session</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus
-            tincidunt efficitur.
-          </p>
-          <button type="button" className="btn btn-link">
-            Book your session here
-          </button>
+          <button type="button" className="btn btn-link customButton">
+            <h1>Book your session</h1>
+          </button>  
         </div>
         <footer>
           <Footer />
@@ -55,5 +66,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
