@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-
-class BookingSlot extends Component {
+import MyBookings from "./myBookings";
+class Booked extends Component {
   state = {};
 
   render() {
@@ -14,7 +14,7 @@ class BookingSlot extends Component {
           </p>
           <p>{this.props.service}</p>
           <button onClick="http://www.paypal.com" className="btn btn-dark">
-            Book Now
+            Cancel
           </button>
         </div>
       </div>
@@ -60,4 +60,4 @@ class BookingSlot extends Component {
   }
 }
 
-export default BookingSlot;
+export default Booked;
