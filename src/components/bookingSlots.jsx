@@ -10,7 +10,7 @@ class BookingSlots extends Component {
 				service: 'Reiki'
 			},
 			{
-				startTime: '2020-08-22 10:52:00Z',
+				startTime: '2020-08-22 10:08:00Z',
 				endTime: '2020-08-22 12:52:00Z',
 				service: 'Reiki'
 			},

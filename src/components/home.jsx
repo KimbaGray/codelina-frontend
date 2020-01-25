@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Heroimage from "../images/Heroimage.jpg";
+import Heroimage from "../images/Prayer.jpg";
 import Reikiken from "../images/Reikiken.jpg";
 
 class Home extends Component {

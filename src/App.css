@@ -7,7 +7,7 @@ h1 {
 }
 
 body {
-	font-family: futura;
+font-family: 'Raleway', sans-serif;
 }
 
 img {
@@ -63,6 +63,9 @@ p {
 	justify-content: center;
 }
 
+.desktopOnly{
+	display: none;
+}
 .socialMedia {
 	font-size: 24px;
 	margin: 10px;
@@ -80,7 +83,21 @@ form {
 	margin: 5%;
 }
 
+	.bookingSlot {
+	background-color: #2323231c;
+	border-radius: 5px;
+	width: 53%;
+		margin: 20px;
+		padding: 10px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+
 @media only screen and (min-width: 600px) {
+
+
 	img {
 		width: 50vw;
 	}
@@ -105,12 +122,46 @@ form {
 		padding-bottom: 0;
 	}
 
+.Logo {
+	width: 200px;
+}
+
 	.copy {
 		display: flex;
 		flex-direction: column;
 		padding: 20px;
 		align-items: center;
 		justify-content: center;
+	}
+
+	.contactImages {
+		display: flex;
+		justify-content: center;
+		height: 100%;
+	}
+
+	.contactImages img{
+		width: 30%;
+		object-fit: cover;
+		padding: 20px;
+		margin-top: 10px;
+
+	}
+.desktopOnly{
+	display: block;
+}
+	.contactBox{
+		line-height: 150%;
+		padding: 2%;
+	}
+
+	.contactBox h1{
+		font-size: 30px;
+		padding-bottom: 20px;
+	}
+
+	.contactBox p {
+		font-size: 18px;
 	}
 
 	.customButton {
@@ -132,19 +183,5 @@ form {
 		margin: 5%;
 	}
 
-	.bookingSlot {
-		background: pink;
-		margin: 20px;
-		padding: 10px;
-		display: flex;
-		justify-content: space-between;
-	}
 
-	.bookingSlotDanger {
-		background: red;
-		margin: 20px;
-		padding: 10px;
-		display: flex;
-		justify-content: space-between;
-	}
 }
