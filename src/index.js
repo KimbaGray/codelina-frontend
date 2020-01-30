@@ -8,9 +8,11 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
+import Favicon from "react-favicon";
 
 ReactDOM.render(
   <BrowserRouter>
+    <Favicon url="http://brazilianglow.co.uk/static_images/logo_icon.ico" />
     <App />
   </BrowserRouter>,
   document.getElementById("root")

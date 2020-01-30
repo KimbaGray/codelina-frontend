@@ -160,6 +160,10 @@ form {
   }
   .aboutCarolina,
   .aboutReiki {
+    /* background-image: url("http://brazilianglow.co.uk/static_images/background_plants.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(238, 238, 238, 0.9);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -192,12 +196,14 @@ form {
   }
 
   .contactImages {
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     height: 100%;
   }
 
   .contactImages img {
+    border-radius: 5px;
     width: 30%;
     object-fit: cover;
     padding: 20px;
