@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PayPal from "./paypal";
 
 class BookingSlot extends Component {
   state = {};
@@ -13,9 +14,10 @@ class BookingSlot extends Component {
             {" min"}
           </p>
           <p>{this.props.service}</p>
-          <button onClick="http://www.paypal.com" className="btn btn-dark">
-            Book Now
-          </button>
+          <PayPal
+            startTime={this.props.startTime}
+            endTime={this.props.endTime}
+          ></PayPal>
         </div>
       </div>
     );
