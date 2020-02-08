@@ -7,7 +7,7 @@ class Menu extends Component {
     return (
       <div className="customNav">
         <Link className="navbar-brand" to="/">
-          <img src={Logo} alt="Logo" className="Logo" />
+          <img src={Logo} alt="Brazilian Glow Logo" className="Logo" />
         </Link>
         <nav className="navbar navbar-expand-lg navbar-light bg-white ourNav">
           <button
