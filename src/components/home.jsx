@@ -1,41 +1,54 @@
 import React, { Component } from "react";
-import Heroimage from "../images/Prayer.jpg";
-import Reikiken from "../images/Reikiken.jpg";
 import { Link } from "react-router-dom";
-import ContactPhoto1 from "../images/Carolina.jpg";
-import ContactPhoto2 from "../images/candles1.png";
-import ContactPhoto3 from "../images/Heroimage.jpg";
+import Carolina_collage from "../images/Carolina_collage.png";
 
 class Home extends Component {
   state = {};
   render() {
     return (
       <div>
-        <div className="contactImages">
-          <img src={ContactPhoto1} />
-          <img className="desktopOnly" src={ContactPhoto2} />
-          <img className="desktopOnly" src={ContactPhoto3} />
+        <div>
+          <img
+            src={Carolina_collage}
+            alt="Carolina doing yoga"
+            className="heroCollage"
+          />
         </div>
         <div className="aboutReiki">
           <div className="copy">
             <h1>Reiki with Carolina</h1>
+            <p>--</p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              finibus tincidunt efficitur. Cras pharetra blandit dignissim.
-              Nulla dui sem, finibus eget nunc id, fringilla aliquam ante.
-              Suspendisse semper pharetra ipsum, vitae porta turpis ornare a.
-              Fusce non convallis tellus, quis mattis quam. Phasellus sagittis
-              elit vel urna pellentesque vehicula.
+              Carolina is Brazilian both inside and out. Since living in London,
+              she has attempted to bring the vibrance of South America across
+              the Atlantic. She trained under guru Punnu Wasu as part of her
+              spiritual journey in Bali. She believes in the simplistic power of
+              energy that is manifested in the life force of every living thing,
+              and that reiki is an effect method for tapping into those energy
+              flows to bring about natural healing, stress relief, and intense
+              relaxation.
             </p>
+            <p>
+              Carolina is an outgoing and fun-loving personality with a real
+              gift for fostering communication and understanding wherever she is
+              in the world. Carolina also practices yoga in her spare time and
+              has gone so far as to become qualified in yoga instruction.
+              Carolina offers in-house reiki sessions to like-minded clientele
+              in the London area. These sessions are by appointment only, and
+              they encourage a heightened state of relaxation and spiritual
+              wellness. She hopes that by offering these services, she will help
+              to introduce more people to a more mindful way of living.
+            </p>
+            <br />
             <button type="button" className="btn btn-link customButton">
-              <h1>
+              <div>
                 <Link className="button-link" to="/booking">
                   Book your session
                 </Link>
-              </h1>
+              </div>
             </button>
+            <br />
           </div>
-          <img src={Heroimage} alt="Carolina doing yoga" />
         </div>
       </div>
     );

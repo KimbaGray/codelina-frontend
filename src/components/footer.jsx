@@ -4,7 +4,7 @@ class Footer extends Component {
   state = {};
   render() {
     return (
-      <div className="Footer">
+      <div className="footer">
         <ul>
           <li>
             <i className="fab fa-instagram socialMedia"></i>

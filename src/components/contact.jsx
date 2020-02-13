@@ -1,27 +1,25 @@
 import React, { Component } from "react";
-import ContactPhoto1 from "../images/Carolina.jpg";
-import ContactPhoto2 from "../images/candles1.png";
-import ContactPhoto3 from "../images/Heroimage.jpg";
+import Carolina_contact_collage from "../images/Carolina_contact_collage.png";
 
 class Contact extends Component {
   state = {};
   render() {
-    return(
-    <div>
-     <div className="contactImages">
-      <img src={ContactPhoto1}/>
-      <img className="desktopOnly" src={ContactPhoto2}/>
-      <img className="desktopOnly" src={ContactPhoto3}/>
+    return (
+      <div>
+        <div>
+          <img
+            src={Carolina_contact_collage}
+            alt="Carolina doing yoga"
+            className="heroCollage"
+          />
+        </div>
+
+        <div className="contactBox">
+          <h1>Contact Carolina</h1>
+          <p>For general enquiries:</p>
+          <p>wcscodelina@gmail.com</p>
+        </div>
       </div>
-
-    <div className="contactBox">
-      <h1>Contact Carolina</h1>
-      <p>For general enquiries:</p>
-      <p>wcscodelina@gmail.com</p>
-        
-    </div>
-
-    </div>
     );
   }
 }

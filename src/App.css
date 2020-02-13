@@ -22,8 +22,10 @@ h1 {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
   /* background-image: url("./images/calmPlant.jpeg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Raleway", sans-serif;
 }
 
 img {
@@ -36,6 +38,7 @@ p {
 }
 
 .copy {
+  line-height: 25px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -49,13 +52,13 @@ p {
 }
 
 .aboutReiki {
+  background-color: rgba(238, 238, 238, 0.5);
   display: flex;
   flex-direction: column-reverse;
 }
 
 .customButton {
-  background-color: #d08749;
-  margin: 5vw;
+  background-color: grey;
   padding: 10px;
   color: white;
 }
@@ -67,11 +70,11 @@ p {
   justify-content: center;
 }
 
-.Logo {
+.logo {
   width: 150px;
 }
 
-.Footer > ul {
+.footer > ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -108,7 +111,7 @@ form {
 }
 
 .bookingSlot {
-  background-color: #2323231c;
+  background-color: rgba(238, 238, 238, 0.5);
   border-radius: 5px;
   width: 100%;
   padding: 3%;
@@ -124,6 +127,13 @@ form {
 }
 
 @media only screen and (min-width: 600px) {
+  body {
+    /* background-image: url("./images/calmPlant3.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Raleway", sans-serif;
+  }
+
   .slots {
     display: flex;
     flex-direction: column;
@@ -156,7 +166,7 @@ form {
     align-self: flex-end;
   }
   .bookingSlot {
-    background-color: #2323231c;
+    background-color: rgba(238, 238, 238, 0.5);
     border-radius: 5px;
     width: 100% !important;
     padding: 3%;
@@ -171,14 +181,11 @@ form {
   }
   .aboutCarolina,
   .aboutReiki {
-    /* background-image: url("http://brazilianglow.co.uk/static_images/background_plants.png"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(238, 238, 238, 0.4);
+    background-color: rgba(238, 238, 238, 0.5);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin: 50px;
+    margin: 60px;
   }
 
   .ourNav {
@@ -194,7 +201,7 @@ form {
     padding-bottom: 0;
   }
 
-  .Logo {
+  .logo {
     width: 200px;
   }
 
@@ -203,6 +210,15 @@ form {
     flex-direction: column;
     padding: 20px;
     align-items: center;
+    justify-content: center;
+  }
+
+  .heroCollage {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    align-content: center;
     justify-content: center;
   }
 
@@ -238,7 +254,7 @@ form {
   }
 
   .customButton {
-    background-color: #d08749;
+    background-color: grey;
     padding: 10px;
     color: white !important;
     text-decoration: none;

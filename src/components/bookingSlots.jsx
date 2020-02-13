@@ -43,6 +43,7 @@ class BookingSlots extends Component {
         {Object.entries(groupedSlots).map(([date, slots]) => (
           <>
             <h1>{date}</h1>
+            <br />
             {slots.map(slot => (
               <BookingSlot
                 startTime={slot.slotStartTime}
