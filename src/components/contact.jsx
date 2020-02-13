@@ -9,7 +9,7 @@ class Contact extends Component {
         <div>
           <img
             src={Carolina_contact_collage}
-            alt="Carolina doing yoga"
+            alt="Carolina contact collage"
             className="heroCollage"
           />
         </div>

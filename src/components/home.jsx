@@ -10,7 +10,7 @@ class Home extends Component {
         <div>
           <img
             src={Carolina_collage}
-            alt="Carolina doing yoga"
+            alt="Carolina collage"
             className="heroCollage"
           />
         </div>
