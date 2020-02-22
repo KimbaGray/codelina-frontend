@@ -9,7 +9,7 @@ class Menu extends Component {
         <Link className="navbar-brand" to="/">
           <img src={Logo} alt="Brazilian Glow Logo" className="logo" />
         </Link>
-        <nav className="navbar navbar-expand-lg navbar-light ourNav">
+        <nav className="navbar-expand-lg navbar-light ourNav">
           <button
             className="navbar-toggler"
             type="button"

@@ -6,7 +6,13 @@ class Dashboard extends Component {
   render() {
     return (
       <div>
-        <div>{this.props.loggedIn ? <MyBookings /> : <SignIn />}</div>
+        <div>
+          {this.props.loggedIn ? (
+            <MyBookings />
+          ) : (
+            <SignIn onLoggedIn={this.props.onLoggedIn} />
+          )}
+        </div>
       </div>
     );
   }
