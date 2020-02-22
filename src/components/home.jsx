@@ -16,7 +16,7 @@ class Home extends Component {
         </div>
         <div className="aboutReiki">
           <div className="copy">
-            <h1>Reiki with Carolina</h1>
+            <h1>REIKI WITH CAROLINA</h1>
             <p>--</p>
             <p>
               Carolina is Brazilian both inside and out. Since living in London,
@@ -24,9 +24,9 @@ class Home extends Component {
               the Atlantic. She trained under guru Punnu Wasu as part of her
               spiritual journey in Bali. She believes in the simplistic power of
               energy that is manifested in the life force of every living thing,
-              and that reiki is an effect method for tapping into those energy
-              flows to bring about natural healing, stress relief, and intense
-              relaxation.
+              and that reiki is an effective method for tapping into those
+              energy flows to bring about natural healing, stress relief, and
+              intense relaxation.
             </p>
             <p>
               Carolina is an outgoing and fun-loving personality with a real
@@ -40,13 +40,11 @@ class Home extends Component {
               to introduce more people to a more mindful way of living.
             </p>
             <br />
-            <button type="button" className="btn btn-link customButton">
-              <div>
-                <Link className="button-link" to="/booking">
-                  Book your session
-                </Link>
-              </div>
-            </button>
+            <div>
+              <Link className="callToAction" to="/booking">
+                BOOK YOUR SESSION
+              </Link>
+            </div>
             <br />
           </div>
         </div>

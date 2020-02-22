@@ -32,6 +32,10 @@ img {
   width: 100vw;
 }
 
+.heroCollage {
+  padding-top: 15px;
+}
+
 p {
   text-align: center;
   margin: 10px;
@@ -127,6 +131,23 @@ form {
   height: 22px;
 }
 
+nav {
+  padding: 10px;
+  display: block;
+  text-align: right;
+  width: 45%;
+  float: right;
+}
+
+.callToAction {
+  font-size: 20px;
+  color: orange;
+  border-bottom: solid black 2px;
+  display: inline-block;
+  padding: 15px;
+  position: relative;
+}
+
 @media only screen and (min-width: 600px) {
   body {
     /* background-image: url("./images/calmPlant3.jpg"); */
@@ -209,6 +230,7 @@ form {
   }
 
   .logo {
+    padding-left: 20px;
     width: 200px;
   }
 
@@ -224,7 +246,7 @@ form {
   .heroCollage {
     width: 90%;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -276,7 +298,45 @@ form {
     margin: auto;
     padding: 3%;
   }
+
   .form-group {
     margin: 5%;
+  }
+
+  .navbar-collapse {
+    padding-right: 10px;
+    justify-content: flex-end;
+  }
+
+  .callToAction {
+    font-size: 20px;
+    color: black;
+    border-bottom: solid black 0px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+  }
+
+  .callToAction:hover {
+    color: black;
+  }
+
+  .callToAction:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .callToAction:hover:after {
+    width: 100%;
+    left: 0;
   }
 }

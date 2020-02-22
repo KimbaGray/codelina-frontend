@@ -12,7 +12,7 @@ import Home from "./components/home";
 
 class App extends Component {
   state = {
-    loggedIn: false
+    loggedIn: true
   };
 
   render() {
