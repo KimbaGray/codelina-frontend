@@ -56,7 +56,12 @@ class PayPal extends Component {
 						value={`${this.getPrice(this.calculateDuration(this.props.startTime, this.props.endTime))}`}
 					/>
 					<input type="hidden" name="currency_code" id="currency_code" value="GBP" />
-					<input type="hidden" name="custom" id="custom" value="" />
+					<input
+						type="hidden"
+						name="custom"
+						id="custom"
+						value={this.props.startTime + ',' + this.props.endTime}
+					/>
 					<input type="hidden" name="rm" value="2" />
 					<input type="hidden" name="on0" id="on0" value="Voucher" />
 					<input type="hidden" name="os0" id="os0" value="0" />
@@ -65,7 +70,12 @@ class PayPal extends Component {
 					<input type="hidden" name="return" id="return" value="" />
 					<input type="hidden" name="notify_url" id="notify_url" value="" />
 					<input type="hidden" name="return" id="return" value="https://brazilianglow.co.uk/dashboard" />
-					<input type="hidden" name="notify_url" id="notify_url" value="https://brazilianglow.co.uk/api" />
+					<input
+						type="hidden"
+						name="notify_url"
+						id="notify_url"
+						value="https://paypal.brazilianglow.co.uk/api/bookings/paypal"
+					/>
 					<input
 						type="image"
 						name="submit"
