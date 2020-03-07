@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import BookingSlot from "./bookingSlot";
 import Axios from "axios";
 
-const api = "://brazilianglow.co.uk/api/availability";
+const api = "http://brazilianglow.co.uk/api/availability";
 
 function groupBy(data, keyGenerator) {
   return data.reduce(function(acc, item) {

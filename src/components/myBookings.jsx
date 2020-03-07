@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Booked from "./booked";
 import Axios from "axios";
 
-const api = "://brazilianglow.co.uk/api/bookings/retrieve";
+const api = "http://brazilianglow.co.uk/api/bookings/retrieve";
 
 class MyBookings extends Component {
   state = {
@@ -26,11 +26,11 @@ class MyBookings extends Component {
   };
 
   componentDidMount() {
-    this.getData();
+    this.getData(this.props.email);
   }
 
-  getData() {
-    Axios.post(api, { user_id: 2 }).then(result => {
+  getData(email) {
+    Axios.post(api, { email }).then(result => {
       console.log(result.data);
       this.setState({ bookings: result.data });
     });

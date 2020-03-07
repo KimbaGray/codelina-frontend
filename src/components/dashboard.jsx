@@ -8,7 +8,7 @@ class Dashboard extends Component {
       <div>
         <div>
           {this.props.loggedIn ? (
-            <MyBookings />
+            <MyBookings email={this.props.email} />
           ) : (
             <SignIn onLoggedIn={this.props.onLoggedIn} />
           )}
