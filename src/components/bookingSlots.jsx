@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import BookingSlot from "./bookingSlot";
 import Axios from "axios";
 
-const api = "http://brazilianglow.co.uk/api/availability";
+const api = "://brazilianglow.co.uk/api/availability";
 
 function groupBy(data, keyGenerator) {
   return data.reduce(function(acc, item) {
@@ -53,6 +53,13 @@ class BookingSlots extends Component {
             ))}
           </>
         ))}
+        <div>
+          <p>
+            By making this payment you are putting a deposit on the full cost of
+            a Reiki session. You also agree to the{" "}
+            <a href="">Terms and Conditions</a> and the processing of your data.
+          </p>
+        </div>
       </div>
     );
   }

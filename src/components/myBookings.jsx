@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Booked from "./booked";
 import Axios from "axios";
 
-const api = "http://brazilianglow.co.uk/api/bookings/retrieve";
+const api = "://brazilianglow.co.uk/api/bookings/retrieve";
 
 class MyBookings extends Component {
   state = {
