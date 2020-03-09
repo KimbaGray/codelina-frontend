@@ -12,8 +12,8 @@ import Home from "./components/home";
 
 class App extends Component {
   state = {
-    email: undefined
-    // loggedIn: false
+    email: undefined,
+    loggedIn: false
   };
 
   render() {
@@ -32,10 +32,10 @@ class App extends Component {
             path="/dashboard"
             component={() => (
               <Dashboard
-                loggedIn={this.state.email !== undefined}
+                loggedIn={this.state.loggedIn}
                 onLoggedIn={email => {
                   console.log(email);
-                  this.setState({ loggedIn: email });
+                  this.setState({ email: email, loggedIn: true });
                 }}
                 email={this.state.email}
               />

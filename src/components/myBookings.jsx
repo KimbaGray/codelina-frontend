@@ -30,7 +30,8 @@ class MyBookings extends Component {
   }
 
   getData(email) {
-    Axios.post(api, { email }).then(result => {
+    console.log(api,email);
+    Axios.post(api + email).then(result => {
       console.log(result.data);
       this.setState({ bookings: result.data });
     });
