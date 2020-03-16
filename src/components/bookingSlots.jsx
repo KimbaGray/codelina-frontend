@@ -40,13 +40,13 @@ class BookingSlots extends Component {
 		);
 		return (
 			<div>
+				<br />
+				<p>£60/hour</p>
+				<br />
+				<p>Please select your session below and pay the 20% deposit via the PayPal button</p>
+				<br />
 				{Object.entries(groupedSlots).map(([ date, slots ]) => (
 					<div>
-						<br />
-						<p>£60/hour</p>
-						<br />
-						<p>Please select your session below and pay the 20% deposit via the PayPal button</p>
-						<br />
 						<h1>{date}</h1>
 						<br />
 						{slots.map((slot) => (

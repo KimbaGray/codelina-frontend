@@ -41,14 +41,7 @@ class PayPal extends Component {
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 					<input type="hidden" name="business" value="GS48FF76YNLR4" />
 					<input type="hidden" name="cmd" value="_xclick" />
-					<input
-						type="hidden"
-						name="item_name"
-						value={`Reiki session deposit, ${this.calculateDuration(
-							this.props.startTime,
-							this.props.endTime
-						)} minutes, Start time: ${this.timeStampToBritishDateTime(this.props.startTime)} `}
-					/>
+					<input type="hidden" name="item_name" value={`${this.props.startTime}`} />
 					<input
 						type="hidden"
 						name="amount"

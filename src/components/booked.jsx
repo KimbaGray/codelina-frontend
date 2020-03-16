@@ -12,7 +12,12 @@ class Booked extends Component {
             {this.calculateDuration(this.props.startTime, this.props.endTime)}
             {" min"}
           </p> */}
-					<p>{this.props.service}</p>
+					<p>
+						{'Your Reiki session will start at ' +
+							this.formatTime(parseInt(this.props.service)) +
+							' on ' +
+							this.formatDate(parseInt(this.props.service))}
+					</p>
 				</div>
 			</div>
 		);
