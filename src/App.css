@@ -4,342 +4,393 @@
 .button-link:visited,
 .button-link:link,
 .button-link:active {
-	text-decoration: none;
-	color: white;
+  text-decoration: none;
+  color: white;
 }
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 .button-link:hover {
-	text-decoration: none !important;
-	text-decoration-line: none;
+  text-decoration: none !important;
+  text-decoration-line: none;
 }
 
 h1 {
-	font-size: 18px;
-	text-align: center;
-	margin: 10px;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px;
 }
 
 body {
-	background-image: url("./images/calmPlant.jpeg");
-	background-size: 50rem;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center;
-	font-family: "Raleway", sans-serif;
+  background-size: 50rem;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Raleway", sans-serif;
 }
 
 img {
-	width: 100vw;
+  width: 100vw;
 }
 
 .heroCollage {
-	padding-top: 15px;
+  padding-top: 15px;
 }
 
 p {
-	text-align: center;
-	margin: 10px;
+  text-align: center;
+  margin: 10px;
 }
 
 .copy {
-	font-size: 12px;
-	line-height: 25px;
-	margin: auto;
-	display: flex;
-	flex-direction: column;
-	padding: 20px;
-	align-items: center;
-	justify-content: center;
+  font-size: 12px;
+  line-height: 25px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-link {
-	color: grey;
+  color: grey;
+}
+
+.btn-dark {
+  margin-top: -10px;
 }
 
 .aboutReiki {
-	background-color: rgba(238, 238, 238, 0.5);
-	display: flex;
-	flex-direction: column-reverse;
+  background-color: rgba(238, 238, 238, 0.5);
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .customButton {
-	background-color: grey;
-	padding: 10px;
-	color: white;
+  background-color: grey;
+  padding: 10px;
+  color: white;
+  width: 100px;
+}
+
+.signInButton {
+  width: 100px;
+  margin: auto;
 }
 
 .bookASession {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
-	width: 150px;
+  width: 150px;
 }
 
 .footer > ul {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	margin: auto;
-	justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: auto;
+  justify-content: center;
+  margin-top: 70px;
 }
 
 .desktopOnly {
-	display: none;
+  display: none;
 }
 .socialMedia {
-	font-size: 24px;
-	margin: 10px;
+  color: black;
+  font-size: 24px;
+  margin: 10px;
 }
 
 form {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	margin: auto;
-	padding: 3%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 3%;
 }
 
 .form-group {
-	margin: 5%;
+  margin: 5%;
 }
 .slots {
-	display: flex;
-	padding: 3%;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
+  display: flex;
+  padding: 3%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .bookingSlot {
-	background-color: rgba(238, 238, 238, 0.5);
-	border-radius: 5px;
-	width: 100%;
-	padding: 3%;
-	margin-bottom: 4%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  background-color: rgba(238, 238, 238, 0.5);
+  border-radius: 5px;
+  width: 100%;
+  padding: 3%;
+  margin-bottom: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .payPalButton {
-	width: 72px;
-	height: 22px;
+  width: 72px;
+  height: 22px;
 }
 
 nav {
-	padding: 10px;
-	display: block;
-	text-align: right;
-	width: 45%;
-	float: right;
+  padding: 10px;
+  display: block;
+  text-align: right;
+  width: 45%;
+  float: right;
 }
 
 .callToAction {
-	font-size: 20px;
-	color: orange;
-	border-bottom: solid black 2px;
-	display: inline-block;
-	padding: 15px;
-	position: relative;
+  font-size: 20px;
+  color: black;
+  border-bottom: solid black 2px;
+  display: inline-block;
+  padding: 15px;
+  position: relative;
+}
+
+.tAndCs {
+  text-decoration: underline;
+  color: black;
+}
+
+.tAndCs:hover {
+  color: black;
+}
+
+.email {
+  text-decoration: underline;
+  color: black;
+}
+
+.email:hover {
+  color: black;
+}
+
+.money {
+  display: inline-block;
+  width: 100vw;
 }
 
 @media only screen and (min-width: 600px) {
-	body {
-		background-image: url("./images/calmPlant.jpeg");
-		background-size: auto;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		background-position: center;
-		font-family: "Raleway", sans-serif;
-	}
-	.slots {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		width: 100%;
-	}
-	.container {
-		width: 70%;
-	}
+  body {
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Raleway", sans-serif;
+  }
+  .slots {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .container {
+    width: 70%;
+  }
 
-	.button-link,
-	.button-link:visited,
-	.button-link:link,
-	.button-link:active {
-		text-decoration: none;
-		color: white;
-	}
-	a:hover {
-		text-decoration: none;
-	}
-	.button-link:hover {
-		text-decoration: none !important;
-		text-decoration-line: none;
-	}
+  .button-link,
+  .button-link:visited,
+  .button-link:link,
+  .button-link:active {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .button-link:hover {
+    text-decoration: none !important;
+    text-decoration-line: none;
+  }
 
-	.payPalButton {
-		width: 145px;
-		height: 44px;
-		align-self: flex-end;
-	}
-	.bookingSlot {
-		background-color: rgba(238, 238, 238, 0.5);
-		border-radius: 5px;
-		width: 100% !important;
-		padding: 3%;
-		margin-bottom: 4%;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-	}
+  .payPalButton {
+    width: 145px;
+    height: 44px;
+    align-self: flex-end;
+  }
+  .bookingSlot {
+    background-color: rgba(238, 238, 238, 0.5);
+    border-radius: 5px;
+    width: 100% !important;
+    padding: 3%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-	img {
-		width: 50vw;
-	}
-	.aboutCarolina,
-	.aboutReiki {
-		background-color: rgba(238, 238, 238, 0.5);
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		margin: 60px;
-	}
+  img {
+    width: 50vw;
+  }
+  .aboutCarolina,
+  .aboutReiki {
+    background-color: rgba(238, 238, 238, 0.5);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 60px;
+  }
 
-	h1 {
-		font-size: 24px;
-		text-align: center;
-		margin: 10px;
-	}
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px;
+  }
 
-	.ourNav {
-		display: flex !important;
-		align-items: baseline !important;
-	}
+  .ourNav {
+    display: flex !important;
+    align-items: baseline !important;
+  }
 
-	.customNav {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		padding: 3%;
-		padding-bottom: 0;
-	}
+  .customNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3%;
+    padding-bottom: 0;
+  }
 
-	.logo {
-		padding-left: 20px;
-		width: 200px;
-	}
+  .logo {
+    padding-left: 20px;
+    width: 200px;
+  }
 
-	.copy {
-		font-size: 14px;
-		display: flex;
-		flex-direction: column;
-		padding: 20px;
-		align-items: center;
-		justify-content: center;
-	}
+  .copy {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
 
-	.heroCollage {
-		width: 90%;
-		margin: auto;
-		margin-top: 30px;
-		display: flex;
-		align-content: center;
-		justify-content: center;
-	}
+  .heroCollage {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
 
-	.contactImages {
-		border-radius: 5px;
-		display: flex;
-		justify-content: center;
-		height: 100%;
-	}
+  .contactImages {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
 
-	.contactImages img {
-		border-radius: 5px;
-		width: 30%;
-		object-fit: cover;
-		padding: 20px;
-		margin-top: 10px;
-	}
-	.desktopOnly {
-		display: block;
-	}
-	.contactBox {
-		line-height: 150%;
-		padding: 2%;
-	}
+  .contactImages img {
+    border-radius: 5px;
+    width: 30%;
+    object-fit: cover;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  .desktopOnly {
+    display: block;
+  }
+  .contactBox {
+    line-height: 150%;
+    padding: 2%;
+  }
 
-	.contactBox h1 {
-		font-size: 30px;
-		padding-bottom: 20px;
-	}
+  .contactBox h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
 
-	.contactBox p {
-		font-size: 18px;
-	}
+  .contactBox p {
+    font-size: 18px;
+  }
 
-	.customButton {
-		background-color: grey;
-		padding: 10px;
-		color: white !important;
-		text-decoration: none;
-		margin-top: 10px;
-	}
+  .customButton {
+    background-color: grey;
+    padding: 10px;
+    color: white !important;
+    text-decoration: none;
+    margin-top: 10px;
+  }
 
-	form {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		margin: auto;
-		padding: 3%;
-	}
+  form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 3%;
+  }
 
-	.form-group {
-		margin: 5%;
-	}
+  .form-group {
+    margin: 5%;
+  }
 
-	.navbar-collapse {
-		padding-right: 10px;
-		justify-content: flex-end;
-	}
+  .tAndCs {
+    text-decoration: underline;
+    color: black;
+  }
 
-	.callToAction {
-		font-size: 20px;
-		color: black;
-		border-bottom: solid black 0px;
-		text-decoration: none;
-		display: inline-block;
-		padding: 15px;
-		position: relative;
-	}
+  .tAndCs:hover {
+    color: black;
+  }
 
-	.callToAction:hover {
-		color: black;
-	}
+  .email {
+    text-decoration: underline;
+    color: black;
+  }
 
-	.callToAction:after {
-		background: none repeat scroll 0 0 transparent;
-		bottom: 0;
-		content: "";
-		display: block;
-		height: 2px;
-		left: 50%;
-		position: absolute;
-		background: #000;
-		transition: width 0.3s ease 0s, left 0.3s ease 0s;
-		width: 0;
-	}
+  .email:hover {
+    color: black;
+  }
 
-	.callToAction:hover:after {
-		width: 100%;
-		left: 0;
-	}
+  .navbar-collapse {
+    padding-right: 10px;
+    justify-content: flex-end;
+  }
+
+  .callToAction {
+    font-size: 20px;
+    color: black;
+    border-bottom: solid black 0px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+  }
+
+  .callToAction:hover {
+    color: black;
+  }
+
+  .callToAction:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .callToAction:hover:after {
+    width: 100%;
+    left: 0;
+  }
 }
