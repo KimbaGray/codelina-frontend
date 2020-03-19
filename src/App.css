@@ -58,6 +58,12 @@ p {
 }
 
 .btn-dark {
+  background-color: black;
+  margin-top: -10px;
+}
+
+.btn-dark:hover {
+  background-color: black;
   margin-top: -10px;
 }
 
@@ -68,7 +74,7 @@ p {
 }
 
 .customButton {
-  background-color: grey;
+  background-color: black;
   padding: 10px;
   color: white;
   width: 100px;
@@ -320,7 +326,7 @@ nav {
   }
 
   .customButton {
-    background-color: grey;
+    background-color: black;
     padding: 10px;
     color: white !important;
     text-decoration: none;
