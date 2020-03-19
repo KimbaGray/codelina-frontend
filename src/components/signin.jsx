@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Menu from "./menu";
 import Axios from "axios";
 
-const api = "http://brazilianglow.co.uk/api/users/login";
+const api = "https://brazilianglow.co.uk/api/users/login";
 
 class SignIn extends Component {
   state = {
